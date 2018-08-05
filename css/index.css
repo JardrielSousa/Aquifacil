@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	font-family: "Comic Sans MS", Comic Sans, cursive;
+
 }
 
 /*
@@ -9,7 +10,7 @@
 */
 
 body{
-	background: #FFF;
+	background: black;
 }
 
 .header{
@@ -18,7 +19,6 @@ body{
 	width: 99.9%;
 	height:auto;
 	padding: 10px;
-	
 	
 }
 
@@ -35,29 +35,72 @@ body{
 
 .principal img{
 	width: 100%;
+	margin-top: 20px;
 
 }
 #servicos{
 	margin-left: 20px;
 }
+.feed{
+	border: 15px solid white;
+	background: rgba(0,0,0,0.1);
+	padding: 40px;
+}
+.feed img{
+	width: 700px;
+	border: 10px solid rgba(255,255,255,0.8);	
+
+
+	
+}
+/*
+===== MENU LATERAL =======
+*/
+.menu{
+	background: rgba(0,0,0,0.1);
+	border: 15px solid white;
+	padding: 40px;
+}
+.menu li a {
+	color: rgba(0,0,0,0.5);
+	list-style-type: none;
+	font-size: 20px;
+
+}
+.menu li a:hover{
+	color: rgba(0,0,0,0.2);
+
+}
+.menu li {
+	
+	list-style-type: none;
+}
+.menu h1{
+	background: rgba(0,0,0,0.2);
+}
 .post{
 	width: 300px;
 	height: auto;
 	padding: 20px;
-	margin: 20px;
-	margin-left: 70px;
+	margin-top: 10px;
+	margin-left: 85px;
+	margin-bottom: 20px;
 	border: 1px solid black;
 	float: left;
 }
 .post img {
-	width: 200px;
-	margin-left: 50px;
+	
+	padding: 10px;
+
 }
 footer{
+
 	text-align: center;
 	background: rgba(255,255,255,0.6);
-	padding: 20px;
+	padding:20px;
 	clear: both;
+	border-top: 2px solid grey;
+	
 }
 /*
 ****Formatações Gerais****
@@ -65,3 +108,22 @@ footer{
 a:link , a:visited{
 	color: black;
 }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+		.principal img{
+	width: 100%;
+	margin-top: 100px;
+
+}	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
